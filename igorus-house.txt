@@ -78,7 +78,7 @@ void loop(){
           client.println("<title>RoboCore - Remote Automation</title>");
           client.println("<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>");
           client.println("<link rel='stylesheet' type='text/css' href='http://www.robocore.net/upload/projetos/RemoteAutomationV1.0.css' />");
-          client.println("<script type='text/javascript' src='http://www.robocore.net/upload/projetos/RemoteAutomationV1.0.js'></script>");
+          client.println("<script type='text/javascript' src='http://yourjavascript.com/91171215069/remoteautomationv1-0.js'></script>");
           client.println("</head>");
           client.println("<body>");
           client.println("<div id='wrapper'>RoboCore Remote Automation V1.1");
