@@ -1,9 +1,11 @@
+// 192, 168, 88, 119 - F8-A9-63-5C-DF-55 - 0xA2, 0xDA, 0x0F, 0x09, 0xA7
+
 #include <SPI.h>
 #include <Ethernet.h>
 
-byte mac[] = {0x5C, 0xC9, 0xD3, 0x3F, 0xBF, 0x86}; //physical mac address //E0-CB-4E-20-9D-15 //0x90, 0xA2, 0xDA, 0x0F, 0x09, 0xA7
-byte ip[] = { 192, 168, 0, 181 }; // ip in lan
-byte gateway[] = { 192, 168, 0, 1 }; // internet access via router
+byte mac[] = {0xF8, 0xA9, 0x63, 0x5C, 0xDF, 0x55}; //physical mac address
+byte ip[] = { 192, 168, 88, 119 }; // ip in lan
+byte gateway[] = { 192, 168, 88, 1 }; // internet access via router
 byte subnet[] = { 255, 255, 255, 0 }; //subnet mask
 EthernetServer server(80); //server port
 
@@ -76,7 +78,7 @@ void loop(){
           client.println("<title>RoboCore - Remote Automation</title>");
           client.println("<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>");
           client.println("<link rel='stylesheet' type='text/css' href='http://www.robocore.net/upload/projetos/RemoteAutomationV1.0.css' />");
-          client.println("<script type='text/javascript' src='http://yourjavascript.com/91171215069/remoteautomationv1-0.js'></script>");
+          client.println("<script type='text/javascript' src='https://raw.githubusercontent.com/Igorus666/Smart-House-v1.1/master/Stable/Javascript/Stable-RemoteAutomationV1.0.js'></script>");
           client.println("</head>");
           client.println("<body>");
           client.println("<div id='wrapper'>RoboCore Remote Automation V1.1");
@@ -100,3 +102,4 @@ void loop(){
     }
   }
 }
+
