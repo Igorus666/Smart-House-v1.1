@@ -1,9 +1,10 @@
+
 #include <SPI.h>
 #include <Ethernet.h>
 
-byte mac[] = {0x5C, 0xC9, 0xD2, 0x3F, 0xBF, 0x85}; //physical mac address E0-CB-4E-20-9D-15 0x90, 0xA2, 0xDA, 0x0F, 0x09, 0xA7
-byte ip[] = { 192, 168, 1, 107 }; // ip in lan
-byte gateway[] = { 192, 168, 88, 1 }; // internet access via router
+byte mac[] = { 0x90, 0xA2, 0xDA, 0x0F, 0x09, 0xA7 }; //physical mac address
+byte ip[] = { 192, 168, 0, 99 }; // ip in lan
+byte gateway[] = { 192, 168, 0, 1 }; // internet access via router
 byte subnet[] = { 255, 255, 255, 0 }; //subnet mask
 EthernetServer server(80); //server port
 
@@ -73,13 +74,13 @@ void loop(){
 
           client.println("<html>");
           client.println("<head>");
-          client.println("<title>Smart House v1.1</title>");
+          client.println("<title>RoboCore - Remote Automation</title>");
           client.println("<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>");
           client.println("<link rel='stylesheet' type='text/css' href='http://www.robocore.net/upload/projetos/RemoteAutomationV1.0.css' />");
           client.println("<script type='text/javascript' src='http://www.robocore.net/upload/projetos/RemoteAutomationV1.0.js'></script>");
           client.println("</head>");
           client.println("<body>");
-          client.println("<div id='wrapper'>Smart House v1.1");
+          client.println("<div id='wrapper'>RoboCore Remote Automation V1.1");
           client.print("<div id='rele'></div><div id='estado' style='visibility: hidden;'>");
           client.print(ligado);
           client.println("</div>");
@@ -100,3 +101,4 @@ void loop(){
     }
   }
 }
+
