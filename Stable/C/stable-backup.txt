@@ -77,7 +77,7 @@ void loop(){
           client.println("<head>");
           client.println("<title>RoboCore - Remote Automation</title>");
           client.println("<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>");
-          client.println("<link rel='stylesheet' type='text/css' href='http://www.robocore.net/upload/projetos/RemoteAutomationV1.0.css' />");
+          client.println("<link rel='stylesheet' type='text/css' href='https://raw.githubusercontent.com/Igorus666/Smart-House-v1.1/master/Stable/CSS/Stable-RemoteAutomationV1.0.css' />");
           client.println("<script type='text/javascript' src='https://raw.githubusercontent.com/Igorus666/Smart-House-v1.1/master/Stable/Javascript/Stable-RemoteAutomationV1.0.js'></script>");
           client.println("</head>");
           client.println("<body>");
